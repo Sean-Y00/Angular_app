@@ -6,6 +6,10 @@
  *
  * Name: _byeongsuk yoo__ Student ID: _062411079_ Date: _20210813__
  *
+ * Online Link to Music App: https://web422final-h320i0snf-sean-y00.vercel.app/login
+ *
+ * Online Link to User Api: https://web422user.herokuapp.com/
+ *
  ********************************************************************************/
 
 import { Component } from '@angular/core';
