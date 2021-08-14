@@ -1,4 +1,4 @@
-import { environment } from './../environments/environment.prod';
+import { environment } from './../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { merge, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
@@ -105,7 +105,7 @@ export class MusicDataService {
             );
           } else {
             return new Observable((o) => {
-              o.next([]); // return an empty array immediately to any subscribers
+              o.next({ tracks: [] }); // return an empty array immediately to any subscribers
             });
           }
         })
@@ -133,7 +133,7 @@ export class MusicDataService {
             );
           } else {
             return new Observable((o) => {
-              o.next([]); // return an empty array immediately to any subscribers
+              o.next({ tracks: [] }); // return an empty array immediately to any subscribers
             });
           }
         })
